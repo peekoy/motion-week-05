@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_cli/app/data/model/story_model.dart';
-import 'package:get_cli/app/modules/profile/views/profile_view.dart';
-import 'package:get_cli/app/modules/reels/views/reels_view.dart';
-import 'package:get_cli/app/modules/search_page/views/search_page_view.dart';
-import 'package:get_cli/app/modules/shopping/views/shopping_view.dart';
 import 'package:get_cli/shared/widgets/image_story.dart';
 import 'package:get_cli/shared/widgets/post_widget.dart';
 import '../controllers/home_controller.dart';
@@ -95,37 +91,6 @@ class HomeView extends GetView<HomeController> {
                   // )
                 ],
               ),
-            ),
-            bottomNavigationBar: BottomNavigationBar(
-              unselectedItemColor: Colors.black,
-              selectedItemColor: Colors.black,
-              showSelectedLabels: false,
-              showUnselectedLabels: false,
-              type: BottomNavigationBarType.fixed,
-              onTap: controller.changeTabIndex,
-              currentIndex: controller.tabIndex,
-              items: [
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.home_filled),
-                  label: 'home',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.search),
-                  label: 'search_page',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.video_collection_outlined),
-                  label: 'reels',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.shopping_basket_outlined),
-                  label: 'shopping',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.account_circle_outlined),
-                  label: 'profile',
-                ),
-              ]
             ),
           ),
         );

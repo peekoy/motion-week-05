@@ -2,11 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get_cli/app/data/model/post_model.dart';
 import 'package:get/get.dart';
 import 'package:get_cli/app/data/model/story_model.dart';
-import 'package:get_cli/app/modules/dashboard/views/dashboard_view.dart';
-import 'package:get_cli/app/modules/profile/views/profile_view.dart';
-import 'package:get_cli/app/modules/reels/views/reels_view.dart';
-import 'package:get_cli/app/modules/search_page/views/search_page_view.dart';
-import 'package:get_cli/app/modules/shopping/views/shopping_view.dart';
 import 'package:get_cli/app/routes/app_pages.dart';
 import 'package:story_view/story_view.dart';
 
@@ -94,11 +89,5 @@ class HomeController extends GetxController {
       }
     );
   }
-
-  void changeTabIndex(int index) {
-    tabIndex = index;
-    update();
-  }
-  
   
 }
