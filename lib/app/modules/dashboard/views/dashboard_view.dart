@@ -18,7 +18,14 @@ class DashboardView extends StatelessWidget {
         return Scaffold(
           body: SafeArea(
             child: IndexedStack(
-              
+              index: controller.tabIndex,
+              children: [
+                HomeView(),
+                SearchPageView(),
+                ReelsView(),
+                ShoppingView(),
+                ProfileView(),
+              ],
             ),
           ),
           bottomNavigationBar: BottomNavigationBar(
